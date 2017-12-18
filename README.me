@@ -1,0 +1,30 @@
+# JSON Response
+
+
+## If you wish to run this project 
+```ruby
+you may have to edit this file .env to use the proper data for your database setup
+
+```
+...
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+...
+``
+don't forget to create the database 
+
+
+### open the terminal in the project directory
+
+#### migrate the database
+> php artisan migrate
+
+
+#### to ginarate random data run the factory
+> php artisan tinker
+```
+	factory('App\Engineer', 20)->create();
+```
+this will generate a 20 Engineer on the database
+
